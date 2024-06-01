@@ -153,14 +153,43 @@
 # for example:
 # input1 is 5 and input2 is 10 and input3 is 15
 # output should be 15 as this number is larger than 5 and 10
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-num3 = int(input("Enter third number: "))
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# num3 = int(input("Enter third number: "))
 
-largest = max(num1, num2, num3)
-if largest == num1:
-    print(f"{num1} is largest")
-elif largest == num2:
-    print(f"{num2} is largest")
+# largest = max(num1, num2, num3)
+# if largest == num1:
+#     print(f"{num1} is largest")
+# elif largest == num2:
+#     print(f"{num2} is largest")
+# else:
+#     print(f"{num3} is largest")
+
+
+
+# Write a python program that accept user an input. The valid input should be of following
+# - GREEN or gREEN or green etc 
+# - RED or red or rEd etc 
+# - YELLOW or yellow or yELlOw etc
+# program should display the following message on checking above input
+# Car is allowed to go
+# Car has to wait
+# Car has to stop
+# invalid input
+
+
+color = input("Enter a color (green, red, yellow): ")
+color = color.lower()
+
+if color in ("green", "red", "yellow"):
+    if color == "green":
+        print("Car is allowed to go")
+    elif color == "red":
+        print("Car has to stop")
+    else:
+        print("Car has to wait")
 else:
-    print(f"{num3} is largest")
+    print("Invalid input")
+    
+    
+    
